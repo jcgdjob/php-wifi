@@ -32,7 +32,7 @@
     "require": {
         "php": "^7.2.8||^8.0",
         "splitbrain/php-cli": "^1.1",
-        "tightenco/collect": "^5.8",
+        "tightenco/collect": "^5.8||^8.16.0",
         "phplucidframe/console-table": "^1.2"
     },
     "require-dev": {
