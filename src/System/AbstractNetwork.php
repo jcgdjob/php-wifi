@@ -116,7 +116,7 @@ abstract class AbstractNetwork implements NetworkInterface
      * @param string $password
      * @param string $device
      */
-    abstract public function connect(string $password, string $device): void;
+    abstract public function connect(string $password, string $device, string $extra_command): void;
 
     /**
      * @param string $device

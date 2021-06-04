@@ -20,9 +20,9 @@ class Network extends AbstractNetwork
      *
      * @throws \Exception
      */
-    public function connect(string $password, string $device): void
+    public function connect(string $password, string $device, string $extra_command = ""): void
     {
-        $format = 'LANG=C nmcli -w 10 device wifi connect "%s" password "%s" ifname "%s"';
+        $format = $extra_command.'LANG=C nmcli -w 10 device wifi connect "%s" password "%s" ifname "%s"';
 
         $this->getCommand()->execute(sprintf($format, $this->ssid, $password, $device));
     }

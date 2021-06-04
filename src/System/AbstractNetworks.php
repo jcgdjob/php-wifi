@@ -38,6 +38,9 @@ abstract class AbstractNetworks
     {
         $output = $this->command->execute($this->getCommand());
 
+        if (strlen((string)$output) <= 1)
+            return new Collection("");
+
         $this->setNetworks(
             $this->extractingNetworks($output)
         );

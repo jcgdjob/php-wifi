@@ -13,7 +13,7 @@ interface NetworkInterface
      * @param string $password
      * @param string $device
      */
-    public function connect(string $password, string $device): void;
+    public function connect(string $password, string $device, string $extra_command): void;
 
     /**
      * @param string $device

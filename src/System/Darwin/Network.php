@@ -21,7 +21,7 @@ class Network extends AbstractNetwork implements FrequencyInterface
      *
      * @throws \Exception
      */
-    public function connect(string $password, string $device): void
+    public function connect(string $password, string $device, string $extra_command): void
     {
         $this->getCommand()->execute(
             sprintf('networksetup -setairportnetwork %s %s %s', $device, $this->ssid, $password)
